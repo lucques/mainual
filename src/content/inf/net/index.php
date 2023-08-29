@@ -10,8 +10,6 @@
         $c->add_subpage('anwendungsschicht');
         $c->add_subpage('verbindungsschicht');
         $c->add_subpage('hintergrundwissen');
-        $c->add_subpage('klausurvorbereitung');
-        $c->add_subpage('praesentationen');
     };
 
     $t_ids = path_to_target_ids(__DIR__);
