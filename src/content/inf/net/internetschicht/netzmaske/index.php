@@ -1,7 +1,9 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = '6. Netzmaske und LAN-Anschluss';
-            };
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+        
+        $c->title = '6. Netzmaske und LAN-Anschluss';
+    };
 ?>
 
 <? $process = function(Target $target) { ?>
@@ -80,10 +82,10 @@
         </nav>
         <div class="tab-content">
             <div class="tab-pane fade show active" id="image-anschluss-lan" style="height: 200px;">
-                <? ref_img($target->ids, '../../res/img/netzwerkkarte.jpg', style: 'width: 200px;'); ?>
+                <? ref_img(__DIR__ . '/../../res/img/netzwerkkarte.jpg', style: 'width: 200px;'); ?>
             </div>
             <div class="tab-pane fade" id="image-anschluss-wlan" style="height: 200px;">
-                <? ref_img($target->ids, '../../res/img/wlan-adapter.jpg', style: 'width: 200px;'); ?>
+                <? ref_img(__DIR__ .  '/../../res/img/wlan-adapter.jpg', style: 'width: 200px;'); ?>
             </div>
         </div>
     </div>

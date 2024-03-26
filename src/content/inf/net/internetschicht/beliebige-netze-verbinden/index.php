@@ -1,7 +1,9 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title =                          '8. Beliebige Netze verbinden';
-        $ctx->get_preprocessor('nav')->title = '8. Belieb. Netze verbinden';            };
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+
+        $c->title =                          '8. Beliebige Netze verbinden';
+        $c->get_preprocessor('nav')->title = '8. Belieb. Netze verbinden';            };
 ?>
 
 <? $process = function(Target $target) { ?>

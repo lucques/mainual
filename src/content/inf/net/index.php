@@ -1,6 +1,7 @@
 <?
-    $preprocess = function (PreprocessContext $c)
-    {
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+
         $c->title = 'Rechnernetze';
 
         $c->add_subpage('netze-protokolle');
@@ -18,11 +19,11 @@
     {
 ?>
         <div class="card">
-            <? ref_img($t_ids, './res/teaser/earth-3537401.png', class: 'card-img-top'); ?>
+            <? ref_img(__DIR__ . '/res/teaser/earth-3537401.png', class: 'card-img-top', style: 'max-width:100%;'); ?>
             <div class="card-body">
                 <? nav_heading_print(2, 'Rechnernetze', class: 'card-title boxed-h1'); ?>
 <?
-        load_defs_from_target_ids($t_ids)['teaser']();
+        load_defs_from_script(__FILE__)['teaser']();
 ?>
                 <div class="alert alert-warning" role="alert">
                     Dieser Kurs befindet sich noch im Aufbau.

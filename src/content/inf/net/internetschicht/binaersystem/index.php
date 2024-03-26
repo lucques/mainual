@@ -1,7 +1,9 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = '3. Binärsystem: Erklärung';
-            };
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+
+        $c->title = '3. Binärsystem: Erklärung';
+    };
 ?>
 
 <? $process = function(Target $target) { ?>

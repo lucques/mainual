@@ -1,20 +1,11 @@
 <?
-    $preprocess = function (PreprocessContext $c)
-    {
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+
         $c->title = 'MaInual';   
          
         $c->add_subpage('inf');
-        
-        $c->set_template('mainual-template');
-        
-        $c->activate_module(new Module('nav',           is_shared: true, is_external: false));     
-        $c->activate_module(new Module('print_mode',    is_shared: true, is_external: false));
-        $c->activate_module(new Module('solution_mode', is_shared: true, is_external: false));
-        $c->activate_module(new Module('html',          is_shared: true, is_external: false));
-        $c->activate_module(new Module('source',        is_shared: true, is_external: false));
-        $c->activate_module(new Module('accordion',     is_shared: true, is_external: false));
-        $c->activate_module(new Module('exercise',      is_shared: true, is_external: false));
-        $c->activate_module(new Module('references',    is_shared: true, is_external: false));
+        $c->add_subpage('impressum');
     };
     
     $process = function(Target $t)

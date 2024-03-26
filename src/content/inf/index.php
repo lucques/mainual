@@ -1,6 +1,7 @@
 <?
-    $preprocess = function (PreprocessContext $c)
-    {
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+
         $c->title = 'Informatik';
 
         $c->add_subpage('net');

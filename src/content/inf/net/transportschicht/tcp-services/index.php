@@ -1,7 +1,9 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = 'TCP: Was bietet es?';
-            };
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+        
+        $c->title = 'TCP: Was bietet es?';
+    };
 ?>
 
 <? $process = function(Target $target) { ?>

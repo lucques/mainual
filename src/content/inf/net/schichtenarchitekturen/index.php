@@ -1,7 +1,9 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = 'Schichtenarchitekturen';
-            };
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+    
+        $c->title = 'Schichtenarchitekturen';
+    };
 ?>
 
 <? $process = function(Target $target) { ?>

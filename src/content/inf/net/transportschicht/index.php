@@ -1,9 +1,11 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = 'Transportschicht';
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
         
-        $ctx->add_subpage('tcp-services');
-        $ctx->add_subpage('tcp-funktionsweise');
+        $c->title = 'Transportschicht';
+        
+        $c->add_subpage('tcp-services');
+        $c->add_subpage('tcp-funktionsweise');
     };
 ?>
 

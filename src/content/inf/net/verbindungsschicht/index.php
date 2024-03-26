@@ -1,6 +1,8 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = 'Verbindungsschicht';
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+        
+        $c->title = 'Verbindungsschicht';
     };
 ?>
 

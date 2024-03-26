@@ -1,6 +1,8 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = 'Hintergrundwissen';
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+        
+        $c->title = 'Hintergrundwissen';
     };
 ?>
 

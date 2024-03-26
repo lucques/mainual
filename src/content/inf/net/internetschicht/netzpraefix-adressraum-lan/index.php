@@ -1,6 +1,8 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = '5. Netzpräfix, Adressraum und LAN';
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+        
+        $c->title = '5. Netzpräfix, Adressraum und LAN';
     };
 ?>
 
@@ -85,13 +87,13 @@
             <div class="tab-pane fade show active" id="image-lan">
                 <p class="text-center">
                     <img src="../../res/filius/img/192-168-0-0-24-netz-mit-praefix.png" alt="" style="width: 350px;">
-                    <? ref_img($target->ids, './res/lan-kabel.jpg', style: 'width: 250px; margin-top:20px;'); ?>
+                    <? ref_img(__DIR__ . '/res/lan-kabel.jpg', style: 'width: 250px; margin-top:20px;'); ?>
                 </p>
             </div>
             <div class="tab-pane fade" id="image-wlan">
                 <p class="text-center">
                     <img src="../../res/filius/img/192-168-0-0-24-netz-mit-praefix-wlan.png" alt="" style="width: 350px;">
-                    <? ref_img($target->ids, './res/wlan-access-point.jpg', style: 'width: 250px; margin-top:20px;'); ?>
+                    <? ref_img(__DIR__ . '/res/wlan-access-point.jpg', style: 'width: 250px; margin-top:20px;'); ?>
                 </p>
             </div>
         </div>

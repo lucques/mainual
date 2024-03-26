@@ -1,7 +1,9 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = 'DNS: Telefonbuch fürs Internet';
-            };
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+
+        $c->title = 'DNS: Telefonbuch fürs Internet';
+    };
 ?>
 
 <? $process = function(Target $target) { ?>

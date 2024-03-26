@@ -1,16 +1,17 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = 'Internetschicht';
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+ 
+        $c->title = 'Internetschicht';
         
-        $ctx->add_subpage('grundlagen');
-        $ctx->add_subpage('erstes-netz');
-        $ctx->add_subpage('binaersystem');
-        $ctx->add_subpage('binaersystem-aufgaben');
-        $ctx->add_subpage('netzpraefix-adressraum-lan');
-        $ctx->add_subpage('netzmaske');
-        $ctx->add_subpage('zwei-lans-verbinden');
-        $ctx->add_subpage('beliebige-netze-verbinden');
-
+        $c->add_subpage('grundlagen');
+        $c->add_subpage('erstes-netz');
+        $c->add_subpage('binaersystem');
+        $c->add_subpage('binaersystem-aufgaben');
+        $c->add_subpage('netzpraefix-adressraum-lan');
+        $c->add_subpage('netzmaske');
+        $c->add_subpage('zwei-lans-verbinden');
+        $c->add_subpage('beliebige-netze-verbinden');
     };
 ?>
 

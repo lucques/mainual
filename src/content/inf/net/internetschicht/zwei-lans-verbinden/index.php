@@ -1,7 +1,9 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = '7. Zwei LANs verbinden';
-            };
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+        
+        $c->title = '7. Zwei LANs verbinden';
+    };
 ?>
 
 <? $process = function(Target $target) { ?>

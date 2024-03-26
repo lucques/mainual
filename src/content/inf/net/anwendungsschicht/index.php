@@ -1,8 +1,11 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = 'Anwendungsschicht';
-        $ctx->add_subpage('http');
-        $ctx->add_subpage('dns');        
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+        
+        $c->title = 'Anwendungsschicht';
+        
+        $c->add_subpage('http');
+        $c->add_subpage('dns');        
     };
 ?>
 

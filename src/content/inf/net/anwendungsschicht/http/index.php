@@ -1,7 +1,9 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = 'Webseiten abrufen';
-            };
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+        
+        $c->title = 'Webseiten abrufen';
+    };
 ?>
 
 <? $process = function(Target $target) { ?>

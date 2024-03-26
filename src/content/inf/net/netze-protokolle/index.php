@@ -1,7 +1,9 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = 'Netze und Protokolle';
-            };
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+        
+        $c->title = 'Netze und Protokolle';
+    };
 ?>
 
 <? $process = function(Target $target) { ?>

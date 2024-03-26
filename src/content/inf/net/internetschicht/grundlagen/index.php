@@ -1,13 +1,15 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = '1. Grundlagen';
-            };
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+        
+        $c->title = '1. Grundlagen';
+    };
 ?>
 
 <? $process = function(Target $target) { ?>
 
 <?
-    // $ctx->show_parent_title = true;
+    // $c->show_parent_title = true;
 ?>
 
 <p>

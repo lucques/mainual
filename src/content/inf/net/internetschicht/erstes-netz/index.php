@@ -1,7 +1,9 @@
 <?
-    $preprocess = function (PreprocessContext $ctx) {
-        $ctx->title = '2. Das erste Netz';
-            };
+    $preprocess = function (PreprocessContext $c) {
+        $c->activate_module('role-info');
+
+        $c->title = '2. Das erste Netz';
+    };
 ?>
 
 <? $process = function(Target $target) { ?>
