@@ -1,11 +1,9 @@
 # MaInual
-
-This repo contains the contents for the website [www.mainual.de](www.mainual.de). The website serves material for learning math and CS. All courses are freely accessible.
+This repo contains the contents for the website [https://www.mainual.de](https://www.mainual.de). The website serves material for learning math and CS. All courses are freely accessible.
 
 
 ## Usage
-
-This website is based on the [conjin framework](https://github.com/lucques/conjin/), commit 596b01c.
+This website is based on the [conjin framework](https://github.com/lucques/conjin/).
 
 
 ## License
