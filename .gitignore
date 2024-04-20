@@ -4,7 +4,11 @@
 *.css.map
 *.autosave.xopp
 
-# File structure
+# Deployment
+deployments/CONJIN_DIR
+deployments/APP_DIR
+deployments/DEPLOYMENTS_DIR
+deployments/dmainual/RCLONE_CONFIG_PATH
 deployments/*/target
 deployments/*/docker_volumes
 
